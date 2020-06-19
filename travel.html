@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-旅行</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        最好的旅行&nbsp;&nbsp;久违的感动
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+        
+        <!-- 我的足迹my_map -->
+        <div class="my_map">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 文字外框footprint，采用绝对定位 -->
+                <div class="footprint">
+                    <img src="img/jiaoyin.png" width="50" height="50" alt="travel">
+                    我 的 足 迹
+                    <img src="img/jiaoyin.png" width="50" height="50" alt="travel">
+                </div>
+                <!-- 文字外框footprint，采用绝对定位 -->
+                <div class="footprint" style="margin:35px 0 0 707.48px">
+                    <img src="img/jiaoyin.png" width="50" height="50" alt="travel">
+                    遍 布 世 界
+                    <img src="img/jiaoyin.png" width="50" height="50" alt="travel">
+                </div>
+                <img src="img/map.png" width="425" height="290" alt="map">
+            </div>
+        </div>
+        <!-- end of my_map -->
+
+        <!-- 旅行中的记忆share_abstract -->
+        <div class="share_abstract">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 内容区content采用flex布局，垂直方向排列 -->
+                <div class="content">
+                    <!-- 小标题 -->
+                    <div class="title"><h2>【   旅  行  中  的  记  忆   】</h2></div>
+                    <!-- 每个旅游地点采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="travel">
+                        <!-- 标题small_title采用flex布局，包含小图标和文字 -->
+                        <div class="small_title"><img src="img/dibiao.png" width="25" height="25" alt="travel" style="margin-right: 5px;"> <div style="flex:7;align-items: center;"> 张家界&凤凰古城</div><div style="flex:1.2;font-weight: normal;font-size:14px;">2019-08-09</div></div>
+                        <!-- 内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:540px;">
+                                <img src="img/zhangjiajie-1.jpg" width="170" height="170" alt="travel">
+                                <img src="img/zhangjiajie-2.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                                <img src="img/fenghuang-2.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                            </div>
+                            <div class="share_text" style="width:284px">
+                                <div style="margin-left: 20px;">                                
+                                    <p>张家界是一个避暑胜地，天门山因自然奇观天门洞得名，天门洞终年氤氲蒸腾，气象变幻莫测，时有团团云雾自洞中吐纳翻涌，时有道道霞光透洞而出，宛如幻境。在武陵源国家森林公园，漫步金鞭溪和十里画廊，与路边的野猴频频互动。张家界的惊、险、奇、美、峻，都蕴含着大自然对人类的馈赠。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 每个旅游地点采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="travel">
+                        <!-- 标题small_title采用flex布局，包含小图标和文字 -->
+                        <div class="small_title"><img src="img/dibiao.png" width="25" height="25" alt="travel" style="margin-right: 5px;"> <div style="flex:7;align-items: center;"> 北京</div><div style="flex:1.2;font-weight: normal;font-size:14px;">2019-07-22</div></div>
+                        <!-- 内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:540px;">
+                                <img src="img/beijing-2.jpg" width="170" height="170" alt="travel">
+                                <img src="img/beijing-3.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                                <img src="img/beijing-1.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                            </div>
+                            <div class="share_text" style="width:284px">
+                                <div style="margin-left: 20px;">
+                                    <p>这次主要的任务是去北京大学参加中国大学生计算机设计大赛，第一次近距离接触中国最高的学府，异常激动。与搭档一同从校赛到省赛，最终进入决赛，历经四个多月的时间，最终功夫不负有心人，取得了一定的成绩，对我来说也是一次重要的经历。在离京前三个小时，来到南锣鼓巷，竟然偶遇《中国新说唱》旗下的嘻饮力，太幸运了。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 每个旅游地点采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="travel">
+                        <!-- 标题small_title采用flex布局，包含小图标和文字 -->
+                        <div class="small_title"><img src="img/dibiao.png" width="25" height="25" alt="travel" style="margin-right: 5px;"> <div style="flex:7;align-items: center;"> 上海&南京</div><div style="flex:1.2;font-weight: normal;font-size:14px;">2017-08-09</div></div>
+                        <!-- 内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:540px;">
+                                <img src="img/shanghai-2.jpg" width="170" height="170" alt="travel">
+                                <img src="img/shanghai-1.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                                <img src="img/nanjing.jpg" width="170" height="170" alt="travel" style="margin-left:15px">
+                            </div>
+                            <div class="share_text" style="width:284px">
+                                <div style="margin-left: 20px;">
+                                    <p>高考结束后的第一场旅行，来到了江浙沪一带，在梦寐以求的迪士尼乐园游玩，除了排队比较痛苦之外，其他都没毛病，体验感贼舒服，在那里每个人都好像回到了童年一样，女孩子们都快来实现公主梦吧，晚上的城堡烟花非常浪漫。南京也是一座有历史文化底蕴的城市，但我可能只记住了夫子庙旁边的鸭血粉丝汤哈哈哈~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of content -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of share_abstract -->
+
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    <!-- end of container -->
+</body>
+</html>

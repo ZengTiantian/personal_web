@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-关于我</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        关于我&nbsp;&nbsp;你不知道的事
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 关于我详情部分，同learn-part样式 -->
+        <div class="learn-part">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside" style="width: 80%;">
+                <!-- 关于我的内容区learn-detail，采用浮动布局，左边learn-left和右边learn-right -->
+                <div class="learn-detail">
+                    <!-- 左边learn-left，个人简介及联系方式 -->
+                    <div class="learn-left" style="width: 250px;">
+                        <div class="info">
+                            <img src="img/my_photo.jpg" width="170" height="235" alt="info" style="border: 1px solid #bec2c3;">
+                            <!-- 信息详情info_detail采用表格的形式 -->
+                            <table class="info_detail">
+                                <!-- 每行包括图标和文字 -->
+                                <tr>
+                                    <td><img src="img/xingming.png" width="19" height="19" alt="info" style="vertical-align: middle;margin-right: 3px;"><span style="vertical-align: middle;">曾田田</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/xuexiao.png" width="19" height="19" alt="info" style="vertical-align: middle;margin-right: 3px;"><span style="vertical-align: middle;">中南财经政法大学</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/shu.png" width="19" height="19" alt="info" style="vertical-align: middle;margin-right: 3px;"><span style="vertical-align: middle;">信息管理与信息系统</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/youxiang.png" width="19" height="19" alt="info" style="vertical-align: middle;margin-right: 3px;"><span style="vertical-align: middle;">1114913652@qq.com</span></td>
+                                </tr>
+                                <tr><td></td></tr>
+                                <tr>
+                                    <td><span style="vertical-align: middle;">欢迎志同道合的伙伴联系我~</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/xiangxia.png" width="19" height="19" alt="info" style="vertical-align: middle"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/erweima.png" width="170" height="170" alt="info" style="vertical-align: middle"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- end of learn-left -->
+                    <!-- 右边learn-right -->
+                    <div class="learn-right">
+                        <!-- 关于我的内容区,采用flex布局 -->
+                        <div class="experience" style="height:500px">
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content内容 -->
+                            <div class="ex-item" >
+                                <div class="ex-title"><img src="img/bianhua.png" width="30" height="30" alt="passage" style="margin-right: 5px;">过去 · 现在 · 未来</div>
+                                <div class="ex-content">
+                                    <p>
+                                        我叫曾田田，是中南财经政法大学大三的学生，主修信息管理与信息系统专业，辅修金融学双学位。从小的志向是考上最厉害的财经院校学习金融，所以“两财一贸”是我一直以来的奋斗目标，高考虽然未能如愿，但还是为了进入专业性较强财经院校，放弃了一些“985“院校，选择中南财经政法大学，填报专业时看到信息管理与信息系统（金融数据工程方向）这个专业，感觉既满足我的心愿又符合大数据时代发展潮流，于是就决定学习这个专业。进入大学后，发现这个专业实际上是偏向计算机的，并让我对计算机方面的知识产生了浓厚的兴趣，但心中仍有一个金融梦，所以在大二下学期选择辅修金融学双学位，利用周末时间为自己充电。进入大三以后，对自己未来的发展有了进一步的想法，于我而言，计算机和金融两个方面都很感兴趣，故职业发展目标是希望能够进入金融机构从事计算机和数据处理方面的技术工作。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content内容 -->
+                            <div class="ex-item" >
+                                <div class="ex-title"><img src="img/shenghuo.png" width="30" height="30" alt="passage" style="margin-right: 5px;">生活 VS. 学习</div>
+                                <div class="ex-content">
+                                    <p>
+                                        可能在大多数人眼中认为我是一个“学习狂”，进入大学后一直保持着高中的学习习惯，认真对待每门课程，坚持课前预习和课后复习，每周末会复习一周所学的知识并加以总结和拓展，从早上八点到晚上十点一直泡在图书馆中，尽管很辛苦也很费时，但我还挺享受这个过程，有一种收获满满的幸福感。但是，我也有生活，逛街、购物、听歌、美食、旅游、追剧追综艺…可以在不同时间带给我生活的乐趣。在我的观念里，学习和生活是分开的，我喜欢用整块的时间去学习，用碎片化的时间去生活，二者相辅相成，可以过的很开心、很有意义，但不排除有学累了、学倦了的情况，这时我会选择去影院看一场电影，因为每看一部电影，我就会产生一些新的思考和感悟，第二天就会调整好状态，元气满满啦。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of experience -->
+                    </div>
+                    <!-- end of learn-right -->
+                </div>
+                <!-- end of learn-detail -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of learn-part -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+    </div>
+    <!-- end of container -->
+</body>
+</html>

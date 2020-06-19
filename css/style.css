@@ -1,0 +1,454 @@
+/* 通用模块-开始 */
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,td,th,form,p,img,a,div,nav{
+    margin:0px;
+    padding:0px;
+}
+ul,li,ol{
+    list-style: none;
+}
+body{
+    /* 设置通用的字体、颜色、大小 */
+    width:100%;
+    height:100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei",Verdana, Geneva, Tahoma, sans-serif;
+    color:#525556;
+}
+a{
+    text-decoration: none;
+    color:#525556;
+}
+/* 页面最外部容器，定义背景图片 */
+.container{
+    width:100%;
+    background-image: url(../img/bizhi-test.jpg);
+    background-position: top center;
+}
+/* 每个页面上部共同部分，页眉 */
+.top_head{
+    width:100%;
+    color:#fff;
+}
+/* 导航区外层盒子 */
+.nav_box{
+    position: absolute;/*绝对定位*/
+    z-index:100;
+    right:0;
+    float:right;
+    padding-top:40px;
+    padding-right:90px;
+}
+.nav_box nav ul li{
+    float:left;
+    position: relative;/*相对定位，导航项浮动到左侧*/
+}
+.nav_box nav ul li a{
+    padding:0px 20px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color:#fff;
+}
+.nav_box nav ul li a:hover{
+    font-size: 18px;/*鼠标放在导航项处字体变大*/
+    color:#fff;
+}
+.head_picture{
+    text-align: center;
+    width:100%;
+    height:235px;
+}
+.head_picture .inner{
+    padding-top: 80px;
+    text-align: center;
+}
+/* 每个区域公共类inside，宽度固定，居中 */
+.inside{
+    width:70%;
+    height:100%;
+    margin:0 auto;
+}
+/* 头像 */
+.inner img{
+    width:100px;
+    height:100px;
+    /* 通过以下设置制作圆形头像 */
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* 页脚区 */
+.foot{
+    width:100%;
+    height:50px;
+}
+.inside .designer{
+    text-align: center;
+    color:#fff;
+    width:100%;
+    margin:0 auto;
+    padding:10px;
+    font-size:12px;
+}
+/* 通用模块-结束 */
+
+
+/* 首页-开始 */
+/* 关键词 */
+.keyword{
+    height:300px;
+    width:100%;
+}
+.keyword .inside{
+    display: flex;/*flex布局*/
+    flex-direction: column;/*标题与内容是垂直排列*/
+}
+.keyword .inside .title{
+    display: flex;
+    flex:1;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+.keyword_list{
+    display:flex;
+    flex: 9;
+    flex-direction:row;/*关键词列表水平排列*/
+    flex-wrap: nowrap;/*不换行*/
+    height:100%;
+    align-items: center;
+}
+/* 第1名关键词 */
+.center{
+    display:flex;
+    flex:4;
+    height:90%;
+    background-color:rgb(255,255,255,0.9);/*有透明度的白色，更柔和*/
+    border-radius: 6px;/*圆角设置，更加温柔*/
+}
+/* 第2、3名的关键词 */
+.both{
+    display:flex;
+    flex:3;
+    height:80%;
+    background-color:rgb(255,255,255,0.9);
+    margin:0 20px;
+    border-radius: 6px;
+}
+.both .box,.center .box{
+    width:100%;
+    padding:20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.center .keyword_img{
+    display: flex;
+}
+.center .keyword_img img{
+    display: flex;
+    flex:5;
+    margin:0 10px;
+}
+.both .box .tit ,.center .box .tit {
+    width:80%;
+    color:#525556;
+    font-size:20px;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 碎片分享 */
+.share_abstract{
+    width:100%;
+    height:780px;
+}
+.share_abstract .inside .content{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+.content .learn,.content .music,.content .travel{
+    display: flex;
+    flex:3;
+    margin:10px 0 10px 0;
+    background-color:rgb(255,255,255,0.9);
+    border-radius: 6px;
+    padding: 10px 30px;
+    flex-direction: column;
+}
+.content .title{
+    color:#fff;
+    text-align: center;
+    margin:0 auto 5px auto;
+}
+.learn .small_title,.music .small_title,.travel .small_title{
+    width:100%;
+    font-weight: bold;
+    font-size:16px;
+    border-bottom: 1px solid #bec2c3;/*标题底部线*/
+    display: flex;
+    flex:0.9;
+    margin-bottom: 8px;
+    color:#525556;/*黑色中有一点灰度*/
+}
+.small_title a:hover{
+    color:rgb(91,119,169);/*从背景图中取得颜色*/
+}
+.learn .share_content,.music .share_content,.travel .share_content{
+    display: flex;
+    flex:6;
+}
+.share_content .share_text{
+    display: flex;
+    text-indent: 2em;/*段落前空两格*/
+}
+.share_text p{
+    line-height:20px;/*行高*/
+}
+/* 首页-结束 */
+
+
+/* 学习-开始 */
+.learn-part{
+    width:100%;
+    height:650px;
+    margin-bottom: 10px;
+}
+.learn-detail{
+    width:100%;
+    height:100%;
+    border-radius: 6px;
+    background-color: rgb(255,255,255,0.9);
+}
+/* 左侧导航 */
+.learn-left{
+    float:left;/*浮动布局，浮动到左侧*/
+    width:200px;/*固定宽度*/
+    height:300px;/*固定高度*/
+}
+.learn-list{
+    width:100%;
+    padding:60px 30px 30px 30px;
+}
+.learn-list li{
+    width:100%;
+    border-bottom: 1px solid #ddd;
+}
+.learn-list li a{
+    height:100%;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding:15px 10px 15px 20px;
+}
+.learn-list li a:hover{
+    background-color:rgb(91,119,169,0.8);/*鼠标放上去时显示颜色*/
+    color:#fff;
+
+}
+/* 右侧 */
+.learn-right{
+    float:right;/*浮动到右侧*/
+    width:700px;/*固定宽度*/
+    height:650px;/*固定高度*/
+}
+/* 学习情况,项目经历,奖项荣誉,研究计划,作品集*/
+.experience{
+    width:90%;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    margin:20px 0px;
+}
+.ex-item{
+    display: flex;
+    flex:2;
+    margin: 10px 10px 10px 0px;
+    flex-direction: column;
+}
+.ex-title{
+    width:100%;
+    font-weight: bold;
+    font-size:14px;
+    display: flex;
+    flex:0.9;
+    background-color:rgb(91,119,169,0.8);
+    color:#fff;
+    align-items: center;/*垂直居中*/
+}
+.ex-content{
+    display: flex;
+    flex:6;
+}
+.ex-content ul li{
+    margin:5px 10px 5px 20px;
+    list-style: disc;/*无序列表前出现一个点*/
+    font-size:13px;
+    line-height:20px;
+
+}
+.ex-content video{
+    text-align:center;
+    margin:0 auto;/*居中的好方法*/
+    margin-top: 20px;
+}
+.ex-content p{
+    text-indent: 2em;/*段前空格*/
+    margin-top: 10px;
+    line-height: 23px;/*设置行高*/
+}
+.ex-content table{
+    text-align: center;
+    border-collapse: collapse;/*表格合并边框*/
+    margin:20px auto;
+    width:400px;
+    font-weight: bold;
+    
+}
+.ex-content td{
+    border: 2px solid rgb(91,119,169,0.8);
+    height:25px;
+}
+/* 学习-结束 */
+
+
+/* 音乐-开始 */
+.music_content{
+    margin:10px 0;
+    text-indent: 2em;/*段前空格*/
+    text-align: left;/*左对齐*/
+}
+.my_song{
+    margin:40px 0 30px 0;
+    width:100%;
+    height:60px;
+}
+.song{
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin:0 auto;
+}
+.my_song .inside .song .txt{
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    display:flex;
+    flex:3;
+    align-items: center;/*垂直居中*/
+    line-height: 30px;
+}
+.my_song .inside .song audio{
+    display: flex;
+    flex:5;
+}
+/* 音乐-结束 */
+
+
+/*旅行-开始*/
+.my_map{
+    width:99%;
+    height:290px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footprint{
+    position: absolute;/*绝对定位*/
+    color:#fff;
+    width:48px;
+    font-size:21px;
+    font-weight:bold;
+    margin:35px 0 0 120px;
+}
+/*旅行-结束 */
+
+
+/* 关于我-开始 */
+.info{
+    padding:35px 20px 20px 20px;
+    text-align: center;
+}
+.info_detail{
+    margin:10px;
+    border-spacing: 5px;/*设置相邻单元格的边框间的距离*/
+}
+/* 关于我-结束 */
+
+
+/*留言板-开始 */
+.message{
+    width: 100%;
+    height:400px;
+    margin-bottom: 10px;
+}
+.message .inside form .form{
+    width:90%;
+    height:90%;
+    text-align: center;
+    margin:0 auto;/*水平居中*/
+}
+.message .inside form .form .form_box{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+}
+.message .inside form{
+    /*表单的样式*/
+    width:100%;
+    height:100%;
+    background-color: rgb(255,255,255,0.9);
+    border-radius: 6px;
+}
+.mes_con{
+    display: flex;
+    flex-direction: column;
+    flex:8;
+    width:100%;
+    margin-bottom: 10px;
+}
+.mes_con span{
+    margin-right: 30px;
+}
+.mes_title{
+    display: flex;
+    height:30px;
+    background-color: rgb(91,119,169,0.8);
+    color:#fff;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;/*垂直居中*/
+}
+.contact{
+    display:flex;
+    width:70px;
+    height:30px;
+    color:rgb(91,119,169,0.8);
+    font-weight: bold;
+    align-items: center;/*垂直居中*/
+}
+.mes_detail{
+    border:1px solid rgb(91,119,169,0.8);
+    display: flex;
+    height: 100%;
+}
+.submit{
+    display: flex;
+    flex:1;
+}
+.submit button{
+    border-radius: 6px;
+    background-color:  rgb(91,119,169,0.8);
+    height:30px;
+    width:60px;
+    color:white;
+    font-size:14px;
+    font-weight: bold;
+    border:1px solid rgb(91,119,169,0.8);
+}
+/*留言板-结束 */

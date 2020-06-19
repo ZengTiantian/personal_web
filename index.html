@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角-->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 使用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 头像区head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h3 style="font-weight: bold;font-size:21px">
+                        TIAN's Blog
+                    </h3>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 内容区，我的关键词keyword -->
+        <div class="keyword">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 小标题 -->
+                <div class="title"><h2>【   我   的   关   键   词   】</h2></div>
+                <!-- 关键词列表keyword_list,采用flex布局，水平方向分为左边、中间、右边三个部分 -->
+                <div class="keyword_list">
+                    <!-- 左边：弹唱小能手both -->
+                    <div class="both">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/top2.png" width="28" height="28" alt="play">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">弹唱小能手</div>
+                            </div>
+                            <div class="keyword_img">
+                                <img src="img/music.png" width="130" height="130" alt="play">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间：沉迷学习center，宽度和高度都较两边的大 -->
+                    <div class="center">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/top1.png" width="35" height="35" alt="learn">
+                                <div style="display: inline-block; vertical-align:super;margin-left: 5px;">沉迷学习</div>
+                            </div>
+                            <div class="keyword_img">
+                                <img src="img/learn.gif" width="150" height="150" alt="learn">
+                                <img src="img/learn2.gif" width="150" height="150" alt="learn">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右边：背影艺术家both -->
+                    <div class="both">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/top3.png" width="28" height="28" alt="artist">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">背影艺术家</div>
+                            </div>
+                            <div class="keyword_img" style="text-align: center;margin:0 auto;">
+                                <img src="img/beiying-art.jpg" width="130" height="130" alt="artist">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of keyword -->
+
+        <!-- 碎片分享share_abstract -->
+        <div class="share_abstract">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 内容区content采用flex布局，垂直方向排列 -->
+                <div class="content">
+                    <!-- 小标题 -->
+                    <div class="title"><h2>【   碎   片   分   享   】</h2></div>
+                    <!-- 以下分为学习、音乐、旅游碎片三部分 -->
+                    <!-- 学习learn，采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="learn">
+                        <!-- 标题small_title采用flex布局，包含小图标、文字和超链接 -->
+                        <div class="small_title"><div style="flex:7"><img src="img/dongtai.png" width="18" height="18" alt="learn">【学习】第一篇论文发表啦~</div><div style="flex:1.5;font-weight: normal;font-size: 14px;"> 2020-06-08</div><div style="flex:1;font-weight: normal;font-size: 13px;"><a href="learn-base.html">more&gt;&gt;</a></div></div>
+                        <!-- 分享的内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:305px;">
+                                <img src="img/paper.jpg" width="145" height="170" alt="learn">
+                                <img src="img/paper2.jpg" width="145" height="170" alt="learn" style="margin-left:15px"></div>
+                            <div class="share_text" style="width:500px">
+                                <div style="margin-left: 20px;">
+                                    <p>第一篇论文终于发表了，从二月底就开始筹备，与大创小组的同学一起阅读文献、收集资料、拟定提纲，三月初开始正式写作，完成初稿后又经过无数次地推敲和修改，最终顺利地投稿至《理财（经论版）》，并在三月底拿到了录用通知单，经过漫长的等待，终于收到了杂志，一切努力都是值得的。</p>
+                                    <p>这篇论文是从之前的大创项目中延伸出来的，从销售服务和供应两方面，对全渠道式新零售模式进行深入研究，并在此基础上提出科技赋能营造真实体验、数据驱动提供个性化推荐、共享前置仓降低仓储成本等创新展望，相比之前提出的观点更加深入和新颖。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of learn -->
+                    <!-- 音乐music，采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="music">
+                        <!-- 标题small_title采用flex布局，包含小图标、文字和超链接 -->
+                        <div class="small_title"><div style="flex:7"><img src="img/dongtai.png" width="18" height="18" alt="music">【音乐】 王以太的新专辑《演说家》太好听了!</div><div style="flex:1.5;font-weight: normal;font-size: 14px;"> 2019-10-10</div><div style="flex:1;font-weight: normal;font-size: 13px;"><a href="music.html">more&gt;&gt;</a></div></div>
+                        <!-- 分享的内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:305px;">
+                                <img src="img/wangyitai1.jpg" width="145" height="170" alt="music">
+                                <img src="img/wangyitai2.jpg" width="145" height="170" style="margin-left:15px" alt="music"></div>
+                            <div class="share_text" style="width:500px">
+                                <div style="margin-left: 20px;">
+                                    <p>作为一个说唱爱好者，我认为王以太的《演说家》绝对算得上2019年的最佳中文说唱专辑，每首歌都想单曲循环，flow的变化舒服而且猜不透，verse变化巧妙，歌词走心，他的风格能在整个圈子中独树一帜。</p>
+                                    <p>其中，我最喜欢的歌曲是《阿司匹林》，王以太将爱人比作阿司匹林，尽管这样的比喻不太着边，但是爱你的人总会帮你化解生活中的一些负面情绪，缓解你的紧张情绪，所以你的爱人又何尝不是“阿司匹林”？《Real Me》是一首很舒缓的说唱歌曲，它所要表达的就是向听众诠释一个真实的王以太，他将自己的经历写进歌词，又将自己的情感变成曲子。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of music -->
+                    <!-- 旅行travel，采用flex布局，分为small_title标题和share_content内容两部分 -->
+                    <div class="travel">
+                        <!-- 标题small_title采用flex布局，包含小图标、文字和超链接 -->
+                        <div class="small_title"><div style="flex:7"><img src="img/dongtai.png" width="18" height="18" alt="travel">【旅行】 国际高校学术研究旅行团,我们下次再见</div><div style="flex:1.5;font-weight: normal;font-size: 14px;"> 2019-08-09</div><div style="flex:1;font-weight: normal;font-size: 13px;"><a href="travel.html">more&gt;&gt;</a></div></div>
+                        <!-- 分享的内容share_content采用flex布局，水平方向包括图片和文字区 -->
+                        <div class="share_content">
+                            <div style="display: flex;width:305px;">
+                                <img src="img/zhangjiajie-5.jpg" width="305" height="170" alt="travel">
+                            </div>
+                            <div class="share_text" style="width:500px">
+                                <div style="margin-left: 20px;">
+                                    <p>旅行的意义不在于去哪而在于和谁一起。“高中小分队”成长为了“国际高校学术研究旅行团”，从家乡出发，一路惊喜不断，笑声连连。在张家界的山上经历了云雾缭绕、暴雨、放晴等天气变化；在酒店偶遇Cambridge的小姐姐，一起PK唱歌；在金鞭溪附近有吃提子的野猴出没；在凤凰古城的夜晚漫步和欣赏民谣弹唱；还有贯穿始终的狼人杀和"70523"游戏…</p>
+                                    <p>这是一次非常舒服的旅行，不用规划任何事情，跟随细心的同伴，旅途中的记忆都非常美好和难忘，期待“国际高校学术研究旅行团”的再次聚集，一起去更远的未来。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of travel -->
+                </div>
+                <!-- end of content -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of share_abstract -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+    </div>
+    <!-- end of container -->
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-学习-奖项荣誉</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        学无止境&nbsp;&nbsp;提灯前行
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 学习详情部分learn-part -->
+        <div class="learn-part">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside" style="width: 80%;">
+                <!-- 学习详情内容区learn-detail，采用浮动布局，左边learn-left和右边learn-right -->
+                <div class="learn-detail">
+                    <!-- 左边learn-left，边栏导航 -->
+                    <div class="learn-left">
+                        <ul class="learn-list">
+                            <li><a href="learn-base.html" title="学习情况">学习情况</a></li>
+                            <li><a href="learn-experience.html" title="项目经历">项目经历</a></li>
+                            <li><a href="learn-honor.html" title="奖项荣誉"  style="color:#fff;background-color:rgb(91,119,169,0.8);">奖项荣誉</a></li>
+                            <li><a href="learn-plan.html" title="自我评价与研究计划">自我评价与研究计划</a></li>
+                            <li><a href="learn-works.html" title="作品集">作品集</a></li>
+                        </ul>
+                    </div>
+                    <!-- 右边learn-right -->
+                    <div class="learn-right">
+                        <!-- 奖项荣誉experience,flex布局,垂直方向排列 -->
+                        <div class="experience">
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item" style="flex:1;">
+                                <div class="ex-title"><img src="img/jiangxuejin.png" width="30" height="30" alt="honor" style="margin-right: 5px;">奖学金</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>国家励志奖学金</li>
+                                        <li>优秀学生奖学金（二等奖)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item" style="flex:1.5;">
+                                <div class="ex-title"><img src="img/rongyuchenghao.png" width="30" height="30" alt="honor" style="margin-right: 5px;">荣誉称号</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>校级“三好学生”(2次)</li>
+                                        <li>校级“社会实践先进个人”(2次)</li>
+                                        <li>院级“优秀学生干部”</li>
+                                        <li>院级“优秀团学骨干</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><img src="img/jingsai.png" width="30" height="30" alt="honor" style="margin-right: 5px;">竞赛类</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>中国大学生计算机设计大赛国家级三等奖</li>
+                                        <li>中国大学生计算机设计大赛中南赛区二等奖</li>
+                                        <li>中国“互联网+”大学生创新创业大赛校赛铜奖</li>
+                                        <li>中南财经政法大学“中南杯”计算机设计大赛二等奖</li>
+                                        <li>中南财经政法大学校运会女子四百米第七名</li>
+                                        <li>中南财经政法大学校运会迎面接力团体第六名</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><img src="img/jineng.png" width="30" height="30" alt="honor" style="margin-right: 5px;">个人技能</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>全国计算机等级考试二级（C++语言程序设计）优秀、三级（网络技术）合格</li>
+                                        <li>普通话等级测试二级甲等</li>
+                                        <li>熟练使用C++、Java、Python等程序设计语言，有一定的开发能力</li>
+                                        <li>能够使用Eviews、SPSS等软件</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of experience -->
+                    </div>
+                </div>
+                <!-- end of learn-detail -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of learn-part -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+    </div>
+    <!-- end of container -->
+</body>
+</html>

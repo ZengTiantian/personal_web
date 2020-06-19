@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-音乐</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        呼吸不止&nbsp;&nbsp;音乐不停
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 我的音乐风格，同关键词keyword的样式 -->
+        <div class="keyword" style="height:445px">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 小标题 -->
+                <div class="title"><h2>【   我   的   音   乐   风   格   】</h2></div>
+                <!-- 音乐风格列表keyword_list,采用flex布局，水平方向分为左边、中间、右边三个部分 -->
+                <div class="keyword_list">
+                    <!-- 左边：Hiphop -->
+                    <div class="both" style="height:100%">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/shuochang.png" width="28" height="28" alt="music">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">Hiphop</div>
+                            </div>
+                            <div class="keyword_img">
+                                <img src="img/hiphop.jpg" width="200" height="130" alt="music">
+                            </div>
+                            <div class="music_content">
+                                第一次接触Hiphop是通过《中国新说唱》系列节目，不得不感叹rapper们的押韵能力，节奏感也非常强，身体会不知不觉地随之摇摆。最喜欢的两个rapper是杨和苏和王以太，杨和苏的风格偏chopper和hardcore，王以太的风格偏旋律性说唱，希望有机会能够去听他们的livehouse。
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 中间：流行音乐 -->
+                    <div class="both" style="height:100%">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/yinyue.png" width="28" height="28" alt="music">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">流行音乐</div>
+                            </div>
+                            <div class="keyword_img">
+                                <img src="img/jay.jpg" width="200" height="130" alt="music">
+                            </div>
+                            <div class="music_content">
+                                无论何时，周杰伦永远是我心中的C位，才华横溢已经不能满足于形容他了，他的每首歌都是百听不厌的，比较喜欢的几首分享给大家：《晴天》、《一路向北》、《半岛铁盒》、《退后》…（太多写不下了）。今生一定要去听一次周杰伦演唱会，全场大合唱的气氛态好了~
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右边：乐队 -->
+                    <div class="both" style="height:100%">
+                        <!-- 共同的区域内框box，规定内边距 -->
+                        <div class="box">
+                            <div class="tit">
+                                <img src="img/yuedui.png" width="28" height="28" alt="music">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">乐队</div>
+                            </div>
+                            <div class="keyword_img" style="text-align: center;margin:0 auto;">
+                                <img src="img/pannixilin.jpg" width="200" height="130" alt="music">
+                            </div>
+                            <div class="music_content">
+                                真正带我进入乐队世界的是《乐队的夏天》这个节目，观看乐队现场是真的炸裂和过瘾，我的心中也燃起了一个乐队梦。目前最喜欢的乐队是盘尼西林，他们将优美的旋律和夸张、狂放不羁的现场融合，时而狂躁、时而恬静、时而阳光、时而忧郁，将情绪变化很好的融合到音乐里。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of keyword -->
+
+        <!-- 我的音频my_song -->
+        <div class="my_song">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 歌曲song，采用flex布局，水平方向分为文字txt和音频audio -->
+                <div class="song">
+                    <div class="txt">来听听我的歌声吧《夏天的风》</div>
+                    <!-- 采用html5新标签audio -->
+                    <audio src="media/song.m4a" controls></audio>
+                </div>
+            </div>
+        </div>
+        <!-- end of my_song -->
+
+        <!-- 我的乐器，样式同keyword -->
+        <div class="keyword" style="height:330px;margin-bottom: 30px;">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 小标题 -->
+                <div class="title"><h2>【   我   的   乐   器   】</h2></div>
+                <!-- 乐器列表keyword_list,采用flex布局，水平方向分为左边、右边两个部分 -->
+                <div class="keyword_list" style="flex:6">
+                    <!-- 左边：吉他 -->
+                    <div class="both" style="height:100%">
+                        <div class="box">
+                            <!-- 共同的区域内框box，规定内边距 -->
+                            <div class="tit">
+                                <img src="img/jita.png" width="28" height="28" alt="music">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">吉他</div>
+                            </div>
+                            <!-- 采用html5新标签video -->
+                            <video src="media/work4.mp4" width="300" height="175" controls></video>
+                        </div>
+                    </div>
+                    <!-- 右边：电子琴 -->
+                    <div class="both" style="height:100%">
+                        <div class="box">
+                            <!-- 共同的区域内框box，规定内边距 -->
+                            <div class="tit">
+                                <img src="img/gangqin.png" width="28" height="28" alt="music">
+                                <div style="display: inline-block; vertical-align:super;font-size: 16px;">电子琴</div>
+                            </div>
+                            <!-- 采用html5新标签video -->
+                            <video src="media/work3.mp4" width="300" height="175" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of keyword -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+    </div>
+    <!-- end of container -->
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-学习-项目经历</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表结构 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        学无止境&nbsp;&nbsp;提灯前行
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 学习详情部分learn-part -->
+        <div class="learn-part">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside" style="width: 80%;">
+                <!-- 学习详情内容区learn-detail，采用浮动布局，左边learn-left和右边learn-right -->
+                <div class="learn-detail">
+                    <!-- 左边learn-left，边栏导航，采用无序列表结构 -->
+                    <div class="learn-left">
+                        <ul class="learn-list">
+                            <li><a href="learn-base.html" title="学习情况">学习情况</a></li>
+                            <li><a href="learn-experience.html" title="项目经历" style="color:#fff;background-color:rgb(91,119,169,0.8);">项目经历</a></li>
+                            <li><a href="learn-honor.html" title="奖项荣誉">奖项荣誉</a></li>
+                            <li><a href="learn-plan.html" title="自我评价与研究计划">自我评价与研究计划</a></li>
+                            <li><a href="learn-works.html" title="作品集">作品集</a></li>
+                        </ul>
+                    </div>
+                    <!-- 右边learn-right -->
+                    <div class="learn-right">
+                        <!-- 项目经历experience,flex布局,垂直方向排列 -->
+                        <div class="experience">
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><div style="display: flex;flex:7;align-items: center;"><img src="img/keyan.png" width="30" height="30" alt="experience">【科研】O2O背景下全渠道式“新零售”模式设计及平台实现</div><div style="display:flex;flex:2;font-weight:normal;align-items: center;">2019.05-2020.10</div></div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>此项目获2019年<span style="font-weight: bold;">大学生创新创业训练计划项目国家级立项</span>，提出将线下体验、线上购买及现代物流深度融合的全渠道式新零售模式，并结合机器学习的算法进行平台开发。</li>
+                                        <li>我参与了需求分析、模式和功能设计、算法选择、前端设计、系统开发的工作。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><div style="display: flex;flex:7;align-items: center;"><img src="img/keyan.png" width="30" height="30" alt="experience">【科研】基于区块链的商业健康险直付交易模型设计研究</div><div style="display:flex;flex:2;font-weight:normal;align-items: center;">2018.12-2019.03</div></div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>此项目获<span style="font-weight: bold;">中南财经政法大学大学生百项实证创新基金项目立项、结项</span>，为解决中国商业健康险业理赔的痛点，提出了“区块链+健康险直付”模型，实现信息透明、安全可靠、数据共享、智能合约等服务，并设计完整的业务流程。</li>
+                                        <li>我参与了全局统筹、需求调研、模型及业务流程设计的工作。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><div style="display: flex;flex:7;align-items: center;"><img src="img/lunwen2.png" width="30" height="30" alt="experience">【论文】全渠道式新零售模式研究及创新</div><div style="display:flex;flex:2;font-weight:normal;align-items: center;">2019.02-2019.03</div></div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>我以第一作者身份发表于<span style="font-weight: bold;">省级期刊《理财(经论版)》</span>，收录于万方数据库。此论文从销售服务和供应两方面，对全渠道式新零售模式进行深入研究，并在此基础上提出科技赋能营造真实体验、数据驱动提供个性化推荐、共享前置仓降低仓储成本等创新展望。</li>
+                                        <li>我负责全局统筹、构建论文框架、主笔论文、后期修改完善的工作。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><div style="display: flex;flex:7;align-items: center;"><img src="img/kaifa.png" width="30" height="30" alt="experience">【开发】僵尸企业画像及分类系统</div><div style="display:flex;flex:2;font-weight:normal;align-items: center;">2020.01-2020.05</div></div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>该系统使用GBDT构建分类模型，<span style="font-weight: bold;">准确率达到99.8%以上</span></li>
+                                        <li>我参与了数据处理、模型测试、模型优化、后端框架搭建、前端数据可视化展示的工作。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item">
+                                <div class="ex-title"><div style="display: flex;flex:7;align-items: center;"><img src="img/kaifa.png" width="30" height="30" alt="experience">【开发】微信小程序“智学”</div><div style="display:flex;flex:2;font-weight:normal;align-items: center;">2020.01-2020.05</div></div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>此项目为大学生提供集选课、资料、信息交流、备战打卡、目标与成就管理等<span style="font-weight: bold;">一体化学习帮助平台</span>。</li>
+                                        <li>我参与了创意提出、功能设计、前端设计和系统开发与维护的工作。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of experience -->
+                    </div>
+                </div>
+                <!-- end of learn-detail -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of learn-part -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+    </div>
+    <!-- end of container -->
+</body>
+</html>

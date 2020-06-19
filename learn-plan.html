@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-学习-研究计划</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        学无止境&nbsp;&nbsp;提灯前行
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+
+        <!-- 学习详情部分learn-part -->
+        <div class="learn-part">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside" style="width: 80%;">
+                <!-- 学习详情内容区learn-detail，采用浮动布局，左边learn-left和右边learn-right -->
+                <div class="learn-detail">
+                    <!-- 左边learn-left，边栏导航 -->
+                    <div class="learn-left">
+                        <ul class="learn-list">
+                            <li><a href="learn-base.html" title="学习情况">学习情况</a></li>
+                            <li><a href="learn-experience.html" title="项目经历">项目经历</a></li>
+                            <li><a href="learn-honor.html" title="奖项荣誉">奖项荣誉</a></li>
+                            <li><a href="learn-plan.html" title="自我评价与研究计划"  style="color:#fff;background-color:rgb(91,119,169,0.8);">自我评价与研究计划</a></li>
+                            <li><a href="learn-works.html" title="作品集">作品集</a></li>
+                        </ul>
+                    </div>
+                    <!-- 右边learn-right -->
+                    <div class="learn-right">
+                        <!-- 研究计划experience,flex布局,垂直方向排列-->
+                        <div class="experience" style="height:500px">
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item" >
+                                <div class="ex-title"><img src="img/ziwopingjia.png" width="30" height="30" alt="plan" style="margin-right: 5px;">自我评价</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>学习刻苦认真，做事严谨细心</li>
+                                        <li>具有夯实的专业基础知识能力、较强的学习能力和优秀的实践应用能力</li>
+                                        <li>擅长团队合作，有责任心，能够迅速凝聚新团队或融入已有团队</li>
+                                        <li>性格活泼开朗，但只限于在熟悉的人面前，希望以后可以更加勇敢</li>
+                                        <li>待人真诚，与人为善</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 每项ex-item仍采用flex布局，垂直方向排列，分为ex-title标题和ex-content列表 -->
+                            <div class="ex-item" >
+                                <div class="ex-title"><img src="img/plan.png" width="30" height="30" alt="plan" style="margin-right: 5px;">研究计划</div>
+                                <div class="ex-content">
+                                    <ul>
+                                        <li>对深度学习与数据挖掘领域有浓厚兴趣，未来希望能够在此方面继续深造</li>
+                                        <li>目前最迫切的计划是进入一所更好的大学，学习感兴趣的专业，选择一位优秀的导师</li>
+                                        <li>在研究生阶段，我计划通过上课和阅读论文来提升自己知识的广度，通过接触各种项目来加强自己知识的深度，不断提升自己的专业素养和能力</li>
+                                        <li>未来希望能够将所学的计算机和金融知识结合起来，进入金融机构或互联网公司从事计算机和数据分析方面的工作</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of experience -->
+                    </div>
+                </div>
+                <!-- end of learn-detail -->
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of learn-part -->
+
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    <!-- end of container -->
+</body>
+</html>

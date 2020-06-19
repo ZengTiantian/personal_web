@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾田田的个人网站-留言板</title>
+    <link type="text/css"  href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面最外部容器container ，定义页面背景图 -->
+    <div class="container">
+        <!-- 页眉区header -->
+        <header class="top_head">
+            <!-- 导航区，外层nav_box使用绝对定位，固定在页面右上角 -->
+            <div class="nav_box">
+                <!-- 使用html5新标签nav -->
+                <nav>
+                    <!-- 采用无序列表 -->
+                    <ul>
+                        <!-- 每个导航项li标签使用相对定位,仍正常流入页面,然后向左偏移 -->
+                        <li><a href="index.html" title="首页">首页</a></li>
+                        <li><a href="learn-base.html" title="学习">学习</a></li>
+                        <li><a href="music.html" title="音乐">音乐</a></li>
+                        <li><a href="travel.html" title="旅行碎片">旅行</a></li>
+                        <li><a href="about_me.html" title="关于我">关于我</a></li>
+                        <li><a href="message.html" title="留言板">留言板</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of nav_box -->
+            <!-- 标题部分head_picture，居中 -->
+            <div class="head_picture">
+                <div class="inner">
+                    <img src="img/head.jpg" alt="head">
+                    <!-- 标题 -->
+                    <h2>
+                        留言 · 一种慢交流方式
+                    </h2>
+                </div>
+            </div>
+            <!-- end of head_picture -->
+        </header>
+        <!-- end of header -->
+        
+        <!-- 留言部分message -->
+        <div class="message">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <!-- 采用表单 -->
+                <form action="message.html" method="POST">
+                    <!-- 表单内容区，居中 -->
+                    <div class="form">
+                        <!-- form_box采用flex布局，垂直方向排列，分为网站评价、留言、联系方式、提交按钮 -->
+                        <div class="form_box">
+                            <!-- 网站评价 -->
+                            <div class="mes_con" style="flex:1;flex-direction: row;line-height: 30px;"> 
+                                <div class="contact">网站评价</div>
+                                <input class="mes_detail" name="contact" value="1" type="radio"><span>非常满意</span>
+                                <input class="mes_detail" name="contact" value="2" type="radio"><span>满意</span>
+                                <input class="mes_detail" name="contact" value="3" type="radio"><span>一般</span>
+                                <input class="mes_detail" name="contact" value="4" type="radio"><span>不满意</span>
+                                <input class="mes_detail" name="contact" value="5" type="radio"><span>非常不满意</span>
+                            </div>
+                            <!-- 留言 -->
+                            <div class="mes_con">
+                                <div class="mes_title"><div style="margin-left: 6px;">有什么想告诉我的，请畅所欲言！</div></div>
+                                <textarea class="mes_detail" name="content" placeholder="写下你想说的，开始我们的对话"></textarea>
+                            </div>
+                            <!-- 联系方式 -->
+                             <div class="mes_con" style="flex:1;flex-direction: row;"> 
+                                <div class="contact">联系方式</div>
+                                <input class="mes_detail" name="contact" style="height:28px;width:400px" type="text" placeholder="请备注微信/QQ/邮箱">
+                            </div>
+                            <!-- 提交按钮 -->
+                            <div class="submit">
+                                <div style="text-align: center;margin:0 auto">
+                                    <button>提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- end of inside -->
+        </div>
+        <!-- end of message -->
+
+        
+        <!-- 页脚区footer -->
+        <footer class="foot">
+            <!-- 每个区域公共类inside，宽度固定，居中 -->
+            <div class="inside">
+                <div class="designer">
+                    DESIGN BY 曾田田
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    <!-- end of container -->
+</body>
+</html>
